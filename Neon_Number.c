@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,m,sn,s=0,r;
+    int n,m,r,sn,s=0;
     scanf("%d",&n);
     sn=n*n;
     m=sn;
