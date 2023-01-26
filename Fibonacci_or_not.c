@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    int n,n1=0,n2=1,temp,flag=0;
+    scanf("%d",&n);
+    if(n==n1||n==n2)
+    {
+        printf("%d",n);
+    }
+    while(n2<=n)
+    {
+        temp=n2;
+        n2=n1+n2;
+        n1=temp;
+        if(n2==n)
+        {
+            flag=1;
+            break;
+        }
+    }
+    if(flag)
+    {
+        printf("True");
+    }
+    else
+    {
+        printf("False");
+    }
+}
